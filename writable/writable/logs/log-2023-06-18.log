@@ -1,0 +1,571 @@
+INFO - 2023-06-18 01:04:19 --> REDIRECTED ROUTE at home
+INFO - 2023-06-18 01:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:24 --> CSRF token verified.
+INFO - 2023-06-18 01:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:28 --> REDIRECTED ROUTE at home
+INFO - 2023-06-18 01:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:10:51 --> Undefined variable $jabatan
+in APPPATH\Views\user\edit.php on line 27.
+ 1 APPPATH\Views\user\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jabatan', 'C:\\www\\djp_new\\app\\Views\\user\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\user\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 5 APPPATH\Controllers\User.php(91): view('user/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:29:36 --> Undefined variable $jobdesk
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jobdesk', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:30:04 --> Attempt to read property "nama_jb" on array
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on array', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:30:05 --> Attempt to read property "nama_jb" on array
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on array', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:31:07 --> Undefined array key "nama_jb"
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_jb"', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:31:22 --> Attempt to read property "nama_jb" on array
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on array', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:34:04 --> Call to a member function getrow() on array
+in APPPATH\Controllers\Jobdesk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:34:22 --> Call to a member function getrow() on array
+in APPPATH\Controllers\Jobdesk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:35:56 --> Too few arguments to function App\Models\JobdeskModel::getAll3(), 0 passed in C:\www\djp_new\app\Controllers\Jobdesk.php on line 44 and exactly 1 expected
+in APPPATH\Models\JobdeskModel.php on line 56.
+ 1 APPPATH\Controllers\Jobdesk.php(44): App\Models\JobdeskModel->getAll3()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:36:18 --> Call to a member function findBy() on array
+in APPPATH\Controllers\Jobdesk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:37:09 --> Call to undefined method App\Models\JobdeskModel::getRow
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Jobdesk.php(44): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:37:27 --> Call to undefined method App\Controllers\Jobdesk::getRow()
+in APPPATH\Controllers\Jobdesk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:39:58 --> Call to a member function getRowArray() on array
+in APPPATH\Controllers\Jobdesk.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:40:14 --> Call to a member function getRowArray() on array
+in APPPATH\Controllers\Jobdesk.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:44:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRowArray()
+in APPPATH\Models\JobdeskModel.php on line 68.
+ 1 APPPATH\Controllers\Jobdesk.php(44): App\Models\JobdeskModel->getAll3('19')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:44:50 --> Call to undefined method stdClass::getRowArray()
+in APPPATH\Controllers\Jobdesk.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 01:48:11 --> Undefined property: stdClass::$desjb
+in APPPATH\Views\jobdesk\show.php on line 46.
+ 1 APPPATH\Views\jobdesk\show.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$desjb', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 01:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 01:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:15 --> CSRF token verified.
+INFO - 2023-06-18 02:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:12:22 --> Too few arguments to function App\Models\JobdeskModel::getAll3(), 0 passed in C:\www\djp_new\app\Controllers\Jobdesk.php on line 33 and exactly 1 expected
+in APPPATH\Models\JobdeskModel.php on line 56.
+ 1 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:12:49 --> Too few arguments to function App\Models\JobdeskModel::getAll3(), 0 passed in C:\www\djp_new\app\Controllers\Jobdesk.php on line 33 and exactly 1 expected
+in APPPATH\Models\JobdeskModel.php on line 56.
+ 1 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:25:01 --> syntax error, unexpected variable "$jobdesk", expecting "," or ";"
+in APPPATH\Views\jobdesk\show.php on line 66.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 3 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('19', 'show')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:25:45 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:34:36 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:34:51 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:35:47 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:35:47 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:35:48 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:35:48 --> Attempt to read property "nama_jb" on null
+in APPPATH\Views\jobdesk\show.php on line 31.
+ 1 APPPATH\Views\jobdesk\show.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/show', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(46): view('jobdesk/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->show('download', '19')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:36:34 --> File not found: "uploads/jobdesk/RESEACRH PLAN.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/jobdesk/RESEACRH PLAN.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/jobdesk/RESEACRH PLAN.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(804): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/jobdesk/RESEACRH PLAN.pdf')
+ 4 APPPATH\Controllers\Jobdesk.php(140): CodeIgniter\HTTP\Response->download('RESEACRH PLAN.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->download('19')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:12 --> CSRF token verified.
+INFO - 2023-06-18 02:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:37:28 --> File not found: "uploads/jobdesk/RESEACRH PLAN.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/jobdesk/RESEACRH PLAN.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/jobdesk/RESEACRH PLAN.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(804): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/jobdesk/RESEACRH PLAN.pdf')
+ 4 APPPATH\Controllers\Jobdesk.php(140): CodeIgniter\HTTP\Response->download('RESEACRH PLAN.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->download('19')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:37:46 --> File not found: "uploads/jobdesk/2020-06-16-0002.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/jobdesk/2020-06-16-0002.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/jobdesk/2020-06-16-0002.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(804): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/jobdesk/2020-06-16-0002.pdf')
+ 4 APPPATH\Controllers\Jobdesk.php(140): CodeIgniter\HTTP\Response->download('2020-06-16-0002.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->download('22')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:38:06 --> CSRF token verified.
+INFO - 2023-06-18 02:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:41:07 --> CSRF token verified.
+INFO - 2023-06-18 02:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:41:14 --> File not found: "uploads/jobdesk/SRS IT Support.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/jobdesk/SRS IT Support.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/jobdesk/SRS IT Support.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(804): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/jobdesk/SRS IT Support.pdf')
+ 4 APPPATH\Controllers\Jobdesk.php(140): CodeIgniter\HTTP\Response->download('SRS IT Support.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->download('23')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:43:41 --> CSRF token verified.
+INFO - 2023-06-18 02:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:43:54 --> File not found: "uploads/jobdesk/SRS IT Support.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/jobdesk/SRS IT Support.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/jobdesk/SRS IT Support.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(804): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/jobdesk/SRS IT Support.pdf')
+ 4 APPPATH\Controllers\Jobdesk.php(140): CodeIgniter\HTTP\Response->download('SRS IT Support.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->download('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 02:44:07 --> File not found: "uploads/jobdesk/SRS IT Support.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/jobdesk/SRS IT Support.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/jobdesk/SRS IT Support.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(804): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/jobdesk/SRS IT Support.pdf')
+ 4 APPPATH\Controllers\Jobdesk.php(140): CodeIgniter\HTTP\Response->download('SRS IT Support.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->download('24')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-06-18 02:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 02:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

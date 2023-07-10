@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1684948367;_ci_previous_url|s:33:"http://localhost:8080/jobdesk/new";id_user|s:1:"2";error|s:237:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Harus Ada File yang diupload</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:5:{s:5:"no_jd";s:4:"qweq";s:7:"nama_jd";s:5:"21eas";s:5:"id_jb";s:1:"5";s:6:"des_jd";s:5:"sadas";s:7:"file_jd";s:12:"14000279.jpg";}}_ci_validation_errors|a:1:{s:7:"file_jd";s:28:"Harus Ada File yang diupload";}

@@ -1,0 +1,372 @@
+CRITICAL - 2023-05-12 16:59:59 --> Undefined variable $site_url
+in APPPATH\Views\layout\default.php on line 250.
+ 1 APPPATH\Views\layout\default.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site_url', 'C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php', 250)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+CRITICAL - 2023-05-12 17:03:52 --> Undefined variable $site_url
+in APPPATH\Views\layout\default.php on line 250.
+ 1 APPPATH\Views\layout\default.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site_url', 'C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php', 250)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+CRITICAL - 2023-05-12 17:03:53 --> Undefined variable $site_url
+in APPPATH\Views\layout\default.php on line 250.
+ 1 APPPATH\Views\layout\default.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site_url', 'C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php', 250)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+CRITICAL - 2023-05-12 17:03:53 --> Undefined variable $site_url
+in APPPATH\Views\layout\default.php on line 250.
+ 1 APPPATH\Views\layout\default.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site_url', 'C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php', 250)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+CRITICAL - 2023-05-12 17:03:53 --> Undefined variable $site_url
+in APPPATH\Views\layout\default.php on line 250.
+ 1 APPPATH\Views\layout\default.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site_url', 'C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php', 250)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+CRITICAL - 2023-05-12 17:03:53 --> Undefined variable $site_url
+in APPPATH\Views\layout\default.php on line 250.
+ 1 APPPATH\Views\layout\default.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $site_url', 'C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php', 250)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\tempate_ci4\\app\\Views\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+INFO - 2023-05-12 17:20:01 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:20:13 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:21:37 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:21:41 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:23:30 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:23:34 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:26:40 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:26:41 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:33:38 --> REDIRECTED ROUTE at Home
+INFO - 2023-05-12 17:34:07 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:40:11 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:44:18 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:28 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:29 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:31 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:33 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:34 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:36 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:45:44 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:46:13 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:46:16 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:46:46 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:46:55 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:07 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:12 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:14 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:15 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:49 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:51 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:54 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:55 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:47:59 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:48:01 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:48:03 --> REDIRECTED ROUTE at home
+INFO - 2023-05-12 17:48:04 --> REDIRECTED ROUTE at home
+ERROR - 2023-05-12 18:43:08 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:43:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+ERROR - 2023-05-12 18:44:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'ci4', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:44:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+ERROR - 2023-05-12 18:45:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'ci4', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:45:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+ERROR - 2023-05-12 18:45:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'ci4', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:45:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+ERROR - 2023-05-12 18:47:29 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:47:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+ERROR - 2023-05-12 18:47:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:47:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')
+ERROR - 2023-05-12 18:47:34 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#7 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\www\tempate_ci4\app\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+#4 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+#5 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+#6 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\tempate_ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\tempate_ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_...')
+#9 {main}
+CRITICAL - 2023-05-12 18:47:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH\CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\tempate_ci4\\public\\index.php')

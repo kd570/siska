@@ -1,0 +1,2020 @@
+INFO - 2023-05-28 00:55:29 --> REDIRECTED ROUTE at home
+INFO - 2023-05-28 00:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 00:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 00:55:41 --> CSRF token verified.
+ERROR - 2023-05-28 00:55:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'djp_new', 3306, '', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Controllers\Auth.php(23): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->loginProcess()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\www\djp_new\app\Controllers\Auth.php(23): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->loginProcess()
+#5 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#9 {main}
+CRITICAL - 2023-05-28 00:55:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email_user` = :email_user:', [...], false)
+ 3 APPPATH\Controllers\Auth.php(23): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->loginProcess()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 00:56:59 --> CSRF token verified.
+INFO - 2023-05-28 00:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 00:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 00:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 00:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:07:12 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:07:25 --> Attempt to read property "id_jb" on array
+in APPPATH\Views\jabatan\edit.php on line 27.
+ 1 APPPATH\Views\jabatan\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_jb" on array', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:07:34 --> Attempt to read property "id_jb" on array
+in APPPATH\Views\jabatan\edit.php on line 27.
+ 1 APPPATH\Views\jabatan\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_jb" on array', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:07:55 --> Attempt to read property "id_jb" on array
+in APPPATH\Views\jabatan\edit.php on line 27.
+ 1 APPPATH\Views\jabatan\edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_jb" on array', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:08:10 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:11:15 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:27:13 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:28:33 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:28:54 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:29 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:30 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:30 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:30 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:31 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:31 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:30:31 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 01:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 01:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 01:31:52 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:26:11 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:29:14 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:29:20 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:30:20 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:30:24 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:30:27 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:31:55 --> Attempt to read property "id_bg" on array
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_bg" on array', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:34:03 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:34:15 --> Undefined property: stdClass::$nama_bg
+in APPPATH\Views\jabatan\edit.php on line 39.
+ 1 APPPATH\Views\jabatan\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_bg', 'C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/edit', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(74): view('jabatan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 02:36:08 --> Class "App\Controllers\BagianModel" not found
+in APPPATH\Controllers\Jabatan.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Jabatan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 02:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 02:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 03:10:37 --> Undefined variable $bagian
+in APPPATH\Views\jabatan\new.php on line 41.
+ 1 APPPATH\Views\jabatan\new.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bagian', 'C:\\www\\djp_new\\app\\Views\\jabatan\\new.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/new', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(47): view('jabatan/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 03:11:17 --> Undefined variable $bagian
+in APPPATH\Views\jabatan\new.php on line 41.
+ 1 APPPATH\Views\jabatan\new.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bagian', 'C:\\www\\djp_new\\app\\Views\\jabatan\\new.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/new', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(47): view('jabatan/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 03:11:25 --> Undefined variable $bagian
+in APPPATH\Views\jabatan\new.php on line 41.
+ 1 APPPATH\Views\jabatan\new.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bagian', 'C:\\www\\djp_new\\app\\Views\\jabatan\\new.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jabatan\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jabatan/new', [], true)
+ 5 APPPATH\Controllers\Jabatan.php(47): view('jabatan/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jabatan->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jabatan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:15:34 --> CSRF token verified.
+INFO - 2023-05-28 03:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:16:15 --> CSRF token verified.
+INFO - 2023-05-28 03:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:16:22 --> CSRF token verified.
+INFO - 2023-05-28 03:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:17:03 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:17:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:18:57 --> CSRF token verified.
+INFO - 2023-05-28 03:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:19:58 --> CSRF token verified.
+INFO - 2023-05-28 03:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:20:45 --> CSRF token verified.
+INFO - 2023-05-28 03:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:23:44 --> CSRF token verified.
+INFO - 2023-05-28 03:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:23:53 --> CSRF token verified.
+INFO - 2023-05-28 03:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:24:20 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:24:20 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:24:35 --> CSRF token verified.
+INFO - 2023-05-28 03:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:25:12 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:25:12 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:35:07 --> CSRF token verified.
+INFO - 2023-05-28 03:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:35:19 --> CSRF token verified.
+INFO - 2023-05-28 03:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:35:42 --> CSRF token verified.
+INFO - 2023-05-28 03:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:36:40 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:36:40 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Jobdesk.php on line 125.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:39:09 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:39:09 --> Undefined variable $jobdesk
+in APPPATH\Controllers\Jobdesk.php on line 125.
+ 1 APPPATH\Controllers\Jobdesk.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jobdesk', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:39:42 --> CSRF token verified.
+INFO - 2023-05-28 03:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:40:08 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:40:08 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:42:06 --> CSRF token verified.
+INFO - 2023-05-28 03:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:42:47 --> CSRF token verified.
+INFO - 2023-05-28 03:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:49:23 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:49:23 --> Call to undefined method stdClass::getResultArray()
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:51:01 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:51:01 --> Call to undefined method stdClass::getResultArray()
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:54:35 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:54:35 --> Call to undefined method stdClass::getResultArray()
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:54:38 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:54:38 --> Call to undefined method stdClass::getResultArray()
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:54:54 --> CSRF token verified.
+CRITICAL - 2023-05-28 03:54:54 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('13')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 03:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:55:20 --> CSRF token verified.
+INFO - 2023-05-28 03:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:58:02 --> CSRF token verified.
+INFO - 2023-05-28 03:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:58:21 --> CSRF token verified.
+INFO - 2023-05-28 03:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:29 --> CSRF token verified.
+INFO - 2023-05-28 03:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:44 --> CSRF token verified.
+INFO - 2023-05-28 03:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 03:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:01:56 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:01:56 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:02:38 --> CSRF token verified.
+INFO - 2023-05-28 04:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:02:47 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:02:47 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:03:03 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:03:03 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:03:09 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:03:09 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:03:20 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:03:20 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:30 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:04:30 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:04:56 --> CSRF token verified.
+INFO - 2023-05-28 04:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:05:01 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:05:01 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:06:09 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:06:09 --> Attempt to read property "file_jd" on null
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 APPPATH\Controllers\Jobdesk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "file_jd" on null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:08:51 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:08:51 --> Undefined array key "jobdesk"
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 APPPATH\Controllers\Jobdesk.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jobdesk"', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:05 --> CSRF token verified.
+CRITICAL - 2023-05-28 04:09:05 --> Undefined array key "file_jd"
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 APPPATH\Controllers\Jobdesk.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_jd"', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('15')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:30 --> CSRF token verified.
+INFO - 2023-05-28 04:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:09:49 --> CSRF token verified.
+INFO - 2023-05-28 04:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:51 --> CSRF token verified.
+INFO - 2023-05-28 04:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:55 --> CSRF token verified.
+INFO - 2023-05-28 04:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:11:01 --> CSRF token verified.
+INFO - 2023-05-28 04:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:25 --> CSRF token verified.
+INFO - 2023-05-28 04:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:38 --> CSRF token verified.
+INFO - 2023-05-28 04:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:13:55 --> CSRF token verified.
+INFO - 2023-05-28 04:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:14:00 --> CSRF token verified.
+INFO - 2023-05-28 04:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 04:14:14 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'djp_new', 3306, '', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(32): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\www\djp_new\app\Models\JobdeskModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\www\djp_new\app\Controllers\Jobdesk.php(32): App\Models\JobdeskModel->getAll3()
+#5 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#10 {main}
+CRITICAL - 2023-05-28 04:14:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`', [], false)
+ 3 APPPATH\Models\JobdeskModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Jobdesk.php(32): App\Models\JobdeskModel->getAll3()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 04:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:14:21 --> CSRF token verified.
+INFO - 2023-05-28 04:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:15:18 --> CSRF token verified.
+INFO - 2023-05-28 04:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:15:35 --> CSRF token verified.
+INFO - 2023-05-28 04:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:15 --> CSRF token verified.
+INFO - 2023-05-28 04:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:23 --> CSRF token verified.
+INFO - 2023-05-28 04:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:44 --> CSRF token verified.
+INFO - 2023-05-28 04:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:48 --> CSRF token verified.
+INFO - 2023-05-28 04:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:19:30 --> CSRF token verified.
+INFO - 2023-05-28 04:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:19:41 --> CSRF token verified.
+INFO - 2023-05-28 04:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:29 --> CSRF token verified.
+INFO - 2023-05-28 04:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:20:36 --> CSRF token verified.
+INFO - 2023-05-28 04:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:21:09 --> CSRF token verified.
+INFO - 2023-05-28 04:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:21:54 --> CSRF token verified.
+INFO - 2023-05-28 04:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:23:23 --> CSRF token verified.
+INFO - 2023-05-28 04:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 04:23:24 --> CSRF token verified.
+INFO - 2023-05-28 19:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:33 --> CSRF token verified.
+INFO - 2023-05-28 19:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:50:48 --> CSRF token verified.
+INFO - 2023-05-28 19:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:51:19 --> CSRF token verified.
+INFO - 2023-05-28 19:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:52:01 --> CSRF token verified.
+CRITICAL - 2023-05-28 19:52:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 APPPATH\Controllers\Jobdesk.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('18')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 19:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:53:07 --> CSRF token verified.
+INFO - 2023-05-28 19:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:53:21 --> CSRF token verified.
+INFO - 2023-05-28 19:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:53:39 --> CSRF token verified.
+INFO - 2023-05-28 19:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:54:11 --> CSRF token verified.
+INFO - 2023-05-28 19:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:54:18 --> CSRF token verified.
+INFO - 2023-05-28 19:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:54:32 --> CSRF token verified.
+CRITICAL - 2023-05-28 19:54:33 --> Undefined constant "App\Models\flase"
+in APPPATH\Controllers\Jobdesk.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Jobdesk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 19:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:59:16 --> CSRF token verified.
+CRITICAL - 2023-05-28 19:59:16 --> Undefined constant "App\Models\flase"
+in APPPATH\Controllers\Jobdesk.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Jobdesk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 19:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 19:59:17 --> Undefined constant "App\Models\flase"
+in APPPATH\Controllers\Jobdesk.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Jobdesk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 19:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 19:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 19:59:20 --> Undefined constant "App\Models\flase"
+in APPPATH\Controllers\Jobdesk.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Jobdesk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 19:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:00:10 --> Attempt to read property "id_jb" on null
+in APPPATH\Views\jobdesk\new.php on line 44.
+ 1 APPPATH\Views\jobdesk\new.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\new.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/new', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(55): view('jobdesk/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:00:19 --> Attempt to read property "id_jb" on null
+in APPPATH\Views\jobdesk\new.php on line 44.
+ 1 APPPATH\Views\jobdesk\new.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_jb" on null', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\new.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/new', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(55): view('jobdesk/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:02:11 --> Unsupported operand types: string + int
+in APPPATH\Views\jobdesk\index.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/index', [], true)
+ 4 APPPATH\Controllers\Jobdesk.php(35): view('jobdesk/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:03:29 --> Unsupported operand types: string + int
+in APPPATH\Views\jobdesk\index.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/index', [], true)
+ 4 APPPATH\Controllers\Jobdesk.php(35): view('jobdesk/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:03:34 --> Unsupported operand types: string + int
+in APPPATH\Views\jobdesk\index.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/index', [], true)
+ 4 APPPATH\Controllers\Jobdesk.php(35): view('jobdesk/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:03:34 --> Unsupported operand types: string + int
+in APPPATH\Views\jobdesk\index.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/index', [], true)
+ 4 APPPATH\Controllers\Jobdesk.php(35): view('jobdesk/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:03:35 --> Unsupported operand types: string + int
+in APPPATH\Views\jobdesk\index.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/index', [], true)
+ 4 APPPATH\Controllers\Jobdesk.php(35): view('jobdesk/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:06:14 --> Unsupported operand types: string + int
+in APPPATH\Views\jobdesk\index.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/index', [], true)
+ 4 APPPATH\Controllers\Jobdesk.php(36): view('jobdesk/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:08:26 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:08:26 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:19:49 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:19:49 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:19:52 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:19:52 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:19:54 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:19:54 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:20:35 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:20:35 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:20:38 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:20:38 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:18 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:18 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:20 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:20 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:21 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:21 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:26 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:26 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NOT NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:33 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:33 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:35 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:35 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:35 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:35 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:35 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:35 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:22:35 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:22:35 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL', [], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:25:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 5 in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:25:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL :deleted_at:', [...], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-28 20:25:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 5 in C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\www\djp_new\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\www\djp_new\app\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\www\djp_new\app\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+#6 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+#7 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+#8 C:\www\djp_new\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\www\djp_new\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\www\djp_new\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\...')
+#11 {main}
+CRITICAL - 2023-05-28 20:25:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jobdesk`
+JOIN `jabatan` ON `jabatan`.`id_jb` = `jobdesk`.`id_jb`
+JOIN `bagian` ON `bagian`.`id_bg` = `jabatan`.`id_bg`
+WHERE `deleted_at` IS NULL :deleted_at:', [...], false)
+ 5 APPPATH\Models\JobdeskModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jobdesk.php(33): App\Models\JobdeskModel->getAll3()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:28:37 --> CSRF token verified.
+INFO - 2023-05-28 20:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:33 --> CSRF token verified.
+INFO - 2023-05-28 20:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:09 --> CSRF token verified.
+INFO - 2023-05-28 20:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:14 --> CSRF token verified.
+INFO - 2023-05-28 20:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:26 --> CSRF token verified.
+INFO - 2023-05-28 20:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:37 --> CSRF token verified.
+INFO - 2023-05-28 20:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:30:44 --> CSRF token verified.
+INFO - 2023-05-28 20:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:07 --> CSRF token verified.
+INFO - 2023-05-28 20:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:31:44 --> CSRF token verified.
+CRITICAL - 2023-05-28 20:31:44 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Jobdesk.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('20')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:45:56 --> CSRF token verified.
+INFO - 2023-05-28 20:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 20:52:24 --> syntax error, unexpected variable "$data", expecting ")"
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\www\\djp_new\\app\\Controllers\\Jobdesk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Jobdesk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Jobdesk')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Jobdesk', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:52:45 --> CSRF token verified.
+INFO - 2023-05-28 20:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:56:36 --> CSRF token verified.
+CRITICAL - 2023-05-28 20:56:36 --> Call to undefined method stdClass::getResult()
+in APPPATH\Controllers\Jobdesk.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->delete('21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 20:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:57:58 --> CSRF token verified.
+INFO - 2023-05-28 20:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 20:59:02 --> CSRF token verified.
+INFO - 2023-05-28 20:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-28 21:19:17 --> Undefined variable $jobdesk
+in APPPATH\Views\jobdesk\new.php on line 58.
+ 1 APPPATH\Views\jobdesk\new.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jobdesk', 'C:\\www\\djp_new\\app\\Views\\jobdesk\\new.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\www\\djp_new\\app\\Views\\jobdesk\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobdesk/new', [], true)
+ 5 APPPATH\Controllers\Jobdesk.php(55): view('jobdesk/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Jobdesk->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jobdesk))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\www\\djp_new\\public\\index.php')
+INFO - 2023-05-28 21:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:23:01 --> CSRF token verified.
+INFO - 2023-05-28 21:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:00 --> CSRF token verified.
+INFO - 2023-05-28 21:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:39 --> CSRF token verified.
+INFO - 2023-05-28 21:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:24:59 --> CSRF token verified.
+INFO - 2023-05-28 21:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:25:24 --> CSRF token verified.
+INFO - 2023-05-28 21:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-28 21:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
