@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables/media/css/jquery.dataTables.min.css">
-    <!-- <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css"> -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/select2/dist/css/select2.min.css">
 
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/jqvmap/dist/jqvmap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/weathericons/css/weather-icons.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/weathericons/css/weather-icons-wind.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/summernote/dist/summernote-bs4.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/chocolat/dist/css/chocolat.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
@@ -24,7 +25,11 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/custom.css">
 
     <link rel="stylesheet" href="<?= base_url() ?>/leaflet/leaflet.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/leaflet/Control.FullScreen.css">
     <script src="<?= base_url() ?>/leaflet/leaflet.js"></script>
+    <script src="<?= base_url() ?>/leaflet/Control.FullScreen.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 </head>
 
@@ -45,9 +50,9 @@
                             <div class="d-sm-none d-lg-inline-block"><?= userLogin()->name_user; ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#" class="dropdown-item has-icon">
+                            <!-- <a href="#" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> Profile
-                            </a>
+                            </a> -->
                             <a href="<?= site_url('auth/ubahpassword'); ?>" class="dropdown-item has-icon">
                                 <i class="fas fa-key"></i> Ubah Password
                             </a>
@@ -63,7 +68,7 @@
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand p-3">
                         <a href="<?= site_url(); ?>">
-                            <h5 class="text-md-left">SISKA14</h5>
+                            <h5 class="text-md-center">SISKA14</h5>
                         </a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
@@ -80,13 +85,18 @@
                 </aside>
             </div>
 
+
+
             <!-- Main Content -->
+
+
+
             <div class="main-content">
                 <?= $this->renderSection('content'); ?>
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2023 <div class="bullet"></div> By <a href="#">Adi Abdillah</a>
+                    Copyright &copy; 2023 <div class="bullet"></div> By <a href="#">Sub-Bagian TI PTPN XIV</a>
                 </div>
                 <div class="footer-right">
                     1.0.0
@@ -103,6 +113,9 @@
     <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url() ?>/template/node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="<?= base_url() ?>/template/node_modules/select2/dist/js/i18n/id.js"></script>
+
 
 
     <!-- JS Libraies -->
@@ -114,9 +127,11 @@
     <!-- <script src="<?= base_url() ?>/template/node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script> -->
 
     <!-- Template JS File -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
     <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
-
+    <!-- <script src="<?= base_url() ?>/template/node_modules/summernote/dist/summernote-bs4.js"></script> -->
+    <script src="<?= base_url() ?>/template/node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
     <!-- Page Specific JS File -->
     <!-- <script src="<?= base_url() ?>/template/assets/js/page/index-0.js"></script> -->
 </body>

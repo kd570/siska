@@ -88,7 +88,7 @@
                                     <td class="text-center">
                                         <?php if ($value->role != 0) { ?>
                                             <a href="<?= site_url('user/' . $value->id_user . '/reset_pass'); ?>" onclick="return confirm('Apakah anda yakin reset password? Password akan di set ke default menjadi 123456')" id="resetConfirm" title="Reset Password" class="btn btn-primary btn-sm"><i class="fas fa-key "></i></a>
-                                            <a href="<?= site_url('user/' . $value->id_user . '/edit'); ?>" title="Update" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt "></i></a>
+                                            <a href="<?= site_url('user/' . encrypt_decrypt('encrypt', $value->id_user) . '/edit'); ?>" title="Update" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt "></i></a>
                                             <form action="<?= site_url('user/' . $value->id_user); ?>" title="Hapus" method="POST" class="d-inline" id="del-<?= $value->id_user; ?>">
                                                 <?= csrf_field() ?>
                                                 <input type="hidden" name="_method" value="DELETE">

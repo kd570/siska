@@ -50,6 +50,17 @@ $routes->resource('jobdesk', ['filter' => 'isLoggedIn']);
 $routes->get('user/(:num)/reset_pass', 'User::reset_pass/$1');
 $routes->resource('user', ['filter' => 'isLoggedIn']);
 
+$routes->resource('areaaset', ['filter' => 'isLoggedIn']);
+$routes->get('get_kecamatan', 'AreaAset::get_kecamatan');
+
+$routes->resource('areaokupasi', ['filter' => 'isLoggedIn']);
+$routes->get('get_kecamatan', 'AreaOkupasi::get_kecamatan');
+
+$routes->resource('guna', ['filter' => 'isLoggedIn']);
+$routes->resource('sertifikat', ['filter' => 'isLoggedIn']);
+
+$routes->resource('project', ['filter' => 'isLoggedIn']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

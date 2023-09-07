@@ -35,23 +35,13 @@
         <div class="card">
             <div class="card-header">
                 <h4>Data Unit Kerja</h4>
-                <div class="card-header-form">
-                    <form action="" method="GET" autocomplete="off">
-                        <div class="input-group">
-                            <input type="text" name="keyword" value="" class="form-control " style="width:155pt; " placeholder=" Keyword pencarian">
-                            <div class="input-group-btn mr-1">
-                                <button type="submit" class="btn btn-primary"><i class="fas fa-search" style="align-items: flex-end;"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <div class="card-header-action">
                     <a href="<?= site_url('unitkerja/new'); ?>" class="btn btn-primary">Tambah data</a>
                 </div>
             </div>
             <div class="card-body">
                 <div class="table-responsive ">
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="table-unitkerja" style="width: 100%;">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>

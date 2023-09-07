@@ -82,7 +82,8 @@ class User extends ResourceController
 
     public function edit($id = null)
     {
-        $user = $this->us->find($id);
+        $id_decript = encrypt_decrypt('decrypt', $id);
+        $user = $this->us->where('id_user', $id_decript)->first();
         if (is_object($user)) {
             $data['user'] = $user;
             $data['bagian'] = $this->bg->findAll();
