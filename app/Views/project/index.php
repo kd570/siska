@@ -79,31 +79,31 @@ use PhpParser\Node\Stmt\Echo_;
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-bordered text-center">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Jenis</th>
+                                        <th class="text-left" scope="col">Title</th>
                                         <th scope="col">Aset</th>
                                         <th scope="col">Start Date</th>
                                         <th scope="col">Deadline</th>
                                         <th scope="col">Status</th>
                                         <th scope="col">Progres</th>
-                                        <th scope="col">Action</th>
+                                        <th scope="col" class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php foreach ($project as $key => $value) : ?>
                                         <tr>
                                             <td><?= $key + 1 ?></th>
-                                            <td><a href="<?= site_url('project/show'); ?>"><b><?= $value->nama_project ?></b></a></td>
-                                            <?php
-                                            if ($value->jenis_project = 0) {
-                                                echo "<td>Pengurusan Okupasi Lahan</td>";
-                                            } else {
-                                                echo "<td>Pengurusan Aset Lahan</td>";
-                                            }; ?>
+                                            <td class="text-left"><a href="<?= site_url('project/' . encrypt_decrypt('encrypt', $value->id_project) . '/show'); ?>"><b><?= $value->nama_project ?></b></a>
+                                                <br><?php
+                                                    if ($value->jenis_project == 0) {
+                                                        echo "<span class='badge badge-secondary p-1'><small>Pengurusan Aset Lahan</small></span>";
+                                                    } else {
+                                                        echo "<span class='badge badge-info p-1'><small>Pengurusan Okupasi Lahan</small></span>";
+                                                    }; ?>
+                                            </td>
                                             <td><?= $value->nama_aset ?></b></td>
                                             <td><?= $value->start_project ?></b></td>
                                             <td><?= $value->end_project ?></b></td>
@@ -125,13 +125,14 @@ use PhpParser\Node\Stmt\Echo_;
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <a href="#" title="Edit project">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </a>
-                                                <a href="#" title="Delete project" data-action="delete-confirmation">
-                                                    <i class="fa fa-times fa-fw"></i>
-                                                </a>
+                                            <td class="text-center">
+                                                <form action="<?= site_url('project/' . encrypt_decrypt('encrypt', $value->id_project)); ?>" title="Hapus" method="POST" class="d-inline" id="del-<?= $value->id_project; ?>">
+                                                    <?= csrf_field() ?>
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <button class="btn btn-danger btn-sm" data-confirm="Hapus data?| Apakah anda yakin menghapus data?" data-confirm-yes="submitDel(<?= $value->id_project ?>)">
+                                                        <i class=" fas fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -192,8 +193,8 @@ use PhpParser\Node\Stmt\Echo_;
                 <form action="<?= site_url('project') ?>" method="POST" enctype="multipart/form-data">
                     <?= csrf_field() ?>
                     <div class="form-group">
-                        <label>Title</label>
-                        <input type="text" name="nama_project" placeholder="input title" value="<?= old('nama_project'); ?>" class="form-control <?= isset($errors['nama_project']) ? 'is-invalid' : null; ?>" id="nama_project"></input>
+                        <label>Title Project</label>
+                        <input type="text" name="nama_project" placeholder="input project title" value="<?= old('nama_project'); ?>" class="form-control <?= isset($errors['nama_project']) ? 'is-invalid' : null; ?>" id="nama_project"></input>
                         <div class="invalid-feedback"><?= isset($errors['nama_project']) ? $errors['nama_project'] : null; ?></div>
                     </div>
                     <div class="form-group">
@@ -216,13 +217,13 @@ use PhpParser\Node\Stmt\Echo_;
                     </div>
                     <div class="form-group">
                         <label>Deskripsi Project</label>
-                        <textarea name="des_project" placeholder="Input deskripsi project" class="form-control <?= isset($errors['des_project']) ? 'is-invalid' : null; ?>"><?= old('des_project'); ?></textarea>
+                        <textarea name="des_project" placeholder="Input deskripsi project" class="form-control <?= isset($errors['des_project']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= old('des_project'); ?></textarea>
                         <div class="invalid-feedback"><?= isset($errors['des_project']) ? $errors['des_project'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Mulai Project</label>
                         <input type="date" name="start_project" value="<?= old('start_project'); ?>" class="form-control <?= isset($errors['start_project']) ? 'is-invalid' : null; ?>" id="start_project">
-                        <div class="invalid-feedback"><?= isset($errors['start_project']) ? $errors['start_project'] : null; ?></div>
+                        <div class="invalid-feedback" id="invalid-feedback-end-date"><?= isset($errors['start_project']) ? $errors['start_project'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Deadline</label>
@@ -237,6 +238,7 @@ use PhpParser\Node\Stmt\Echo_;
                             <option value="1">Close</option>
                             <option value="2">Done</option>
                         </select>
+                        <div class="invalid-feedback"><?= isset($errors['status_project']) ? $errors['status_project'] : null; ?></div>
                     </div>
             </div>
             <!-- Modal Footer -->
@@ -257,5 +259,4 @@ use PhpParser\Node\Stmt\Echo_;
         });
     <?php endif; ?>
 </script>
-
 <?= $this->endSection() ?>

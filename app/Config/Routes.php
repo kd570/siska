@@ -60,6 +60,10 @@ $routes->resource('guna', ['filter' => 'isLoggedIn']);
 $routes->resource('sertifikat', ['filter' => 'isLoggedIn']);
 
 $routes->resource('project', ['filter' => 'isLoggedIn']);
+$routes->post('project/create_project_m', 'project::create_project_m');
+$routes->post('project/create_project_t', 'project::create_project_t');
+$routes->post('project/del_p_milestone/(:any)', 'project::del_p_milestone/$1');
+$routes->post('project/upd_p_milestone/(:any)', 'project::upd_p_milestone/$1');
 
 /*
  * --------------------------------------------------------------------
