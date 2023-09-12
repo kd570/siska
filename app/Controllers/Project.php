@@ -289,7 +289,47 @@ class Project extends ResourceController
      */
     public function update($id = null)
     {
+        $validation = \Config\Services::validation();
         $id_decript = encrypt_decrypt('decrypt', $id);
+        $validation->setRules(
+            [
+                'nama_project'   => 'required',
+                'jenis_project'   => 'required',
+                'id_aset'   => 'required',
+                'des_project' => 'required',
+                'start_project' => 'required',
+                'end_project' => 'required',
+                'status_project' => 'required',
+            ],
+            [
+                'nama_project' => [
+                    'required' => 'Project title harus diisi.'
+                ],
+                'jenis_project' => [
+                    'required' => 'jenis project harus dipilih.'
+                ],
+                'id_aset' => [
+                    'required' => 'Aset harus dipilih.'
+                ],
+                'des_project' => [
+                    'required' => 'Deskripsi project harus diisi.'
+                ],
+                'start_project' => [
+                    'required' => 'Start date harus diisi.'
+                ],
+                'end_project' => [
+                    'required' => 'Deadline harus diisi.'
+                ],
+                'status_project' => [
+                    'required' => 'Status harus dipilih.'
+                ],
+            ]
+        );
+        $startDate = $this->request->getPost('start_project');
+        $endDate = $this->request->getPost('end_project');
+        if ($endDate <= $startDate) {
+            $validation->setError('end_project', 'Deadline harus diatas start date.');
+        }
         $data = [
             'nama_project' => $this->request->getPost('nama_project'),
             'jenis_project' => $this->request->getPost('jenis_project'),
@@ -298,13 +338,14 @@ class Project extends ResourceController
             'start_project' => $this->request->getPost('start_project'),
             'end_project' => $this->request->getPost('end_project'),
             'status_project' => $this->request->getPost('status_project'),
+            'created_by' => userLogin()->id_user
         ];
-        // dd($data);
-        $save = $this->pr->update($id_decript, $data);
-        if (!$save) {
-            return redirect()->to(site_url('project'))->withInput()->with('errors', $this->pr->errors());
-        } else {
+        if ($validation->run($data)) {
+            $this->pr->update($id_decript, $data);
             return redirect()->to(site_url('project/' . $id . '/show'))->with('success', 'Data berhasil diupdate.');
+        } else {
+            $errors = $validation->getErrors();
+            return redirect()->to(site_url('project/' . $id . '/show'))->withInput()->with('errors_p3', $errors);
         }
     }
 
@@ -334,8 +375,16 @@ class Project extends ResourceController
                 ],
             ]
         );
+        $startDateP = $this->request->getPost('start_project');
         $startDate = $this->request->getPost('start_project_m');
+        $endDateP = $this->request->getPost('end_project');
         $endDate = $this->request->getPost('end_project_m');
+        if ($endDate > $endDateP) {
+            $validation->setError('end_project_m', 'Deadline milestone tidak boleh melewati deadline project .');
+        }
+        if ($startDate < $startDateP) {
+            $validation->setError('start_project_m', 'Start milestone tidak boleh lebih awal dari start project .');
+        }
         if ($endDate <= $startDate) {
             $validation->setError('end_project_m', 'Deadline harus diatas start date.');
         }
@@ -345,16 +394,22 @@ class Project extends ResourceController
             'start_project_m' => $this->request->getPost('start_project_m'),
             'end_project_m' => $this->request->getPost('end_project_m'),
         ];
-        // dd($data);
         $idproject = $this->request->getPost('id_project');
         if ($validation->run($data)) {
             $builder = $this->db->table('p_milestones');
             $builder->where('id_project_m', $id_decript);
             $builder->update($data);
-            return redirect()->to(site_url('project/' . encrypt_decrypt('encrypt', $idproject) . '/show'))->with('success1', 'Data berhasil diupdate.');
+            $success_mt = [
+                'pesan' => 'Data berhasil diupdate.',
+                'id_project' => $idproject,
+                'id_project_m' => $id_decript,
+            ];
+            return redirect()->to(site_url('project/' . encrypt_decrypt('encrypt', $idproject) . '/show'))->with('success_m3', $success_mt);
         } else {
-            $errors1 = $validation->getErrors();
-            return redirect()->to(site_url('project/' . encrypt_decrypt('encrypt', $idproject) . '/show'))->withInput()->with('errors1', $errors1);
+            $errors_mt = $validation->getErrors();
+            $errors_mt['id_project'] = $idproject;
+            $errors_mt['id_project_m'] = $id_decript;
+            return redirect()->to(site_url('project/' . encrypt_decrypt('encrypt', $idproject) . '/show'))->withInput()->with('errors_m3', $errors_mt);
         }
     }
 

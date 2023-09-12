@@ -46,6 +46,16 @@ use PhpParser\Node\Stmt\Echo_;
                                 </div>
                             </div>
                         <?php endif; ?>
+                        <?php if (session()->getFlashdata('success_m3')) : ?>
+                            <?php $success_m3 = session()->getFlashdata('success_m3'); ?>
+                            <div class="alert alert-success alert-dismissible show fade">
+                                <div class="alert-body">
+                                    <button class="close" data-dismiss="alert">x</button>
+                                    <b>Success ! </b>
+                                    <?= $success_m3['pesan'] ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
                         <?php if (session()->getFlashdata('error')) : ?>
                             <div class="alert alert-danger alert-dismissible show fade">
                                 <div class="alert-body">
@@ -78,9 +88,10 @@ use PhpParser\Node\Stmt\Echo_;
                         <!-- CONTENT -->
                         <div class="tab-content tab-bordered" id="myTab3Content">
 
-                            <!-- PROJECT DETAIL -->
+                            <!-- PROJECT -->
                             <div class="tab-pane fade show active" id="project-view2" role="tabpanel" aria-labelledby="project-view">
-                                <?php $errors = session()->getFlashdata('errors'); ?>
+                                <?php $errors = session()->getFlashdata('errors_p3'); ?>
+                                <!-- project update -->
                                 <form action="<?= site_url('project/' . encrypt_decrypt('encrypt', $project->id_project)) ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                                     <?= csrf_field() ?>
                                     <input type="hidden" name="_method" value="PUT">
@@ -88,7 +99,9 @@ use PhpParser\Node\Stmt\Echo_;
                                         <tbody>
                                             <tr>
                                                 <td style="width:15%">Nama Project</td>
-                                                <td style="width:70%"><input type="text" class="form-control <?= isset($errors['nama_project']) ? 'is-invalid' : null; ?>" name="nama_project" value="<?= $project->nama_project ?>" id="nama_project"></td>
+                                                <td style="width:70%"><input type="text" class="form-control <?= isset($errors['nama_project']) ? 'is-invalid' : null; ?>" name="nama_project" value="<?= $project->nama_project ?>" id="nama_project">
+                                                    <div class="invalid-feedback"><?= isset($errors['nama_project']) ? $errors['nama_project'] : null; ?></div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Jenis Project</td>
@@ -112,15 +125,21 @@ use PhpParser\Node\Stmt\Echo_;
                                             </tr>
                                             <tr>
                                                 <td>Deskripsi</td>
-                                                <td><textarea name="des_project" class="form-control <?= isset($errors['des_project']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= $project->des_project ?></textarea></td>
+                                                <td><textarea name="des_project" class="form-control <?= isset($errors['des_project']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= $project->des_project ?></textarea>
+                                                    <div class="invalid-feedback"><?= isset($errors['des_project']) ? $errors['des_project'] : null; ?></div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Start Project Date</td>
-                                                <td><input type="date" name="start_project" value="<?= $project->start_project ?>" class="form-control <?= isset($errors['start_project']) ? 'is-invalid' : null; ?>" id="start_project"></td>
+                                                <td><input type="date" name="start_project" value="<?= $project->start_project ?>" class="form-control <?= isset($errors['start_project']) ? 'is-invalid' : null; ?>" id="start_project">
+                                                    <div class="invalid-feedback"><?= isset($errors['start_project']) ? $errors['start_project'] : null; ?></div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Deadline</td>
-                                                <td><input type="date" name="end_project" value="<?= $project->end_project ?>" class="form-control <?= isset($errors['end_project']) ? 'is-invalid' : null; ?>" id="end_project"></td>
+                                                <td><input type="date" name="end_project" value="<?= $project->end_project ?>" class="form-control <?= isset($errors['end_project']) ? 'is-invalid' : null; ?>" id="end_project">
+                                                    <div class="invalid-feedback"><?= isset($errors['end_project']) ? $errors['end_project'] : null; ?></div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Status</td>
@@ -204,9 +223,9 @@ use PhpParser\Node\Stmt\Echo_;
                                     </table>
                                 </div>
                             </div>
-                            <!-- END PROJECT DETAIL -->
+                            <!-- END PROJECT -->
 
-                            <!-- MILESTONES DETAIL-->
+                            <!-- MILESTONES-->
                             <div class="tab-pane fade" id="milestone-view2" role="tabpanel" aria-labelledby="milestone-view">
                                 <div class="row">
                                     <!-- Tab Samping Kiri -->
@@ -230,27 +249,37 @@ use PhpParser\Node\Stmt\Echo_;
                                             <?php foreach ($milestones as $key => $value) : ?>
                                                 <div class="tab-pane fade" id="home_<?= $value->id_project ?>_<?= $value->id_project_m ?>" role="tabpanel" aria-labelledby="m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>">
                                                     <!-- milestone update -->
-                                                    <?php $errors = session()->getFlashdata('errors'); ?>
+                                                    <?php $errors_m3 = session()->getFlashdata('errors_m3'); ?>
                                                     <form action="<?= site_url('project/upd_p_milestone/' . encrypt_decrypt('encrypt', $value->id_project_m)) ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                                                         <?= csrf_field() ?>
-                                                        <input type="hidden" name="id_project" value="<?= $value->id_project; ?>">
+                                                        <input type="hidden" name="id_project" value="<?= $project->id_project; ?>">
+                                                        <input type="hidden" name="start_project" value="<?= $project->start_project; ?>">
+                                                        <input type="hidden" name="end_project" value="<?= $project->end_project; ?>">
                                                         <table class="table table-bordered table-striped" style="width:100%">
                                                             <tbody>
                                                                 <tr>
                                                                     <td style="width:30%">Milestone Title</td>
-                                                                    <td style="width:70%"><b><input type="text" class="form-control <?= isset($errors['nama_project_m']) ? 'is-invalid' : null; ?>" name="nama_project_m" value="<?= $value->nama_project_m ?>" id="nama_project_m"></b></td>
+                                                                    <td style="width:70%"><b><input type="text" class="form-control <?= isset($errors_m3['nama_project_m']) ? 'is-invalid' : null; ?>" name="nama_project_m" value="<?= $value->nama_project_m ?>" id="nama_project_m"></b>
+                                                                        <div class="invalid-feedback"><?= isset($errors_m3['nama_project_m']) ? $errors_m3['nama_project_m'] : null; ?></div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Deskripsi</td>
-                                                                    <td><textarea name="des_project_m" class="form-control <?= isset($errors['des_project_m']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= $value->des_project_m ?></textarea></td>
+                                                                    <td><textarea name="des_project_m" class="form-control <?= isset($errors_m3['des_project_m']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= $value->des_project_m ?></textarea>
+                                                                        <div class="invalid-feedback"><?= isset($errors_m3['des_project_m']) ? $errors_m3['des_project_m'] : null; ?></div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Start Date Milestone</td>
-                                                                    <td><input type="date" name="start_project_m" value="<?= $value->start_project_m ?>" class="form-control <?= isset($errors['start_project_m']) ? 'is-invalid' : null; ?>" id="start_project_m"></td>
+                                                                    <td><input type="date" name="start_project_m" value="<?= $value->start_project_m ?>" class="form-control <?= isset($errors_m3['start_project_m']) ? 'is-invalid' : null; ?>" id="start_project_m">
+                                                                        <div class="invalid-feedback"><?= isset($errors_m3['start_project_m']) ? $errors_m3['start_project_m'] : null; ?></div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Deadline</td>
-                                                                    <td><input type="date" name="end_project_m" value="<?= $value->end_project_m ?>" class="form-control <?= isset($errors['end_project_m']) ? 'is-invalid' : null; ?>" id="end_project_m"></td>
+                                                                    <td><input type="date" name="end_project_m" value="<?= $value->end_project_m ?>" class="form-control <?= isset($errors_m3['end_project_m']) ? 'is-invalid' : null; ?>" id="end_project_m">
+                                                                        <div class="invalid-feedback"><?= isset($errors_m3['end_project_m']) ? $errors_m3['end_project_m'] : null; ?></div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Progress</td>
@@ -265,7 +294,7 @@ use PhpParser\Node\Stmt\Echo_;
                                                             </tbody>
                                                         </table>
                                                         <div class="d-flex justify-content-start mb-3 ml-3">
-                                                            <button type="submit" class="btn btn-light"><i class="fas fa-save"></i> update data milestone</button>
+                                                            <button type="submit" class="btn btn-light" id="m_update_<?= $value->id_project ?>_<?= $value->id_project_m ?>"><i class="fas fa-save"></i> update data milestone</button>
                                                         </div>
                                                     </form>
                                                     <!-- end milestone update -->
@@ -317,7 +346,7 @@ use PhpParser\Node\Stmt\Echo_;
 
                                 </div>
                             </div>
-                            <!-- END MILESTONES DETAIL -->
+                            <!-- END MILESTONES -->
 
                             <!-- TASK -->
                             <div class="tab-pane fade" id="task-view2" role="tabpanel" aria-labelledby="task-view">
@@ -699,8 +728,10 @@ use PhpParser\Node\Stmt\Echo_;
 </div>
 
 <!-- script Here -->
+<!-- CDN jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+    // Background warna status prject
     $('#status_project').on('change', function() {
         const select = $('#status_project').val();
         console.log(select)
@@ -710,8 +741,8 @@ use PhpParser\Node\Stmt\Echo_;
             document.getElementById("status_project").className = "form-control-sm bg-success";
         else document.getElementById("status_project").className = "form-control-sm bg-danger";
     });
-</script>
-<script>
+
+    // Kembali Menampilkan modal tambah milestone ketika gagal validasi
     <?php if (session()->getFlashdata('errors_m1')) : ?>
         $(document).ready(function() {
             $('#modalForm1').modal('show');
@@ -729,7 +760,7 @@ use PhpParser\Node\Stmt\Echo_;
 </script>
 <script>
     $(document).ready(function() {
-        // Kembali ke modal ketika error
+        // Kembali tab  ketika error milestone ketika tambah task gagal validasi
         <?php if (session()->getFlashdata('errors2')) : ?>
             $('#project-view').removeClass('active');
             $('#project-view2').removeClass('show active');
@@ -737,22 +768,26 @@ use PhpParser\Node\Stmt\Echo_;
             $('#milestone-view2').addClass('show active');
             $('#modalForm2').modal('show');
         <?php endif; ?>
-        // link to detail milestones
+
+
         <?php foreach ($milestones as $key => $value) : ?>
-            $('#pb_<?= $value->id_project ?>_<?= $value->id_project_m ?>,#m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>').click(function() {
-                var id_project = '<?= $value->id_project ?>';
-                var id_project_m = '<?= $value->id_project_m ?>';
+            var id_project = '<?= $value->id_project ?>';
+            var id_project_m = '<?= $value->id_project_m ?>';
+
+            // link direct to detail milestones
+            $('#pb_<?= $value->id_project ?>_<?= $value->id_project_m ?>, #m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>').click(function() {
                 $('#project-view').removeClass('active');
                 $('#project-view2').removeClass('show active');
                 $('#milestone-view').addClass('active');
                 $('#milestone-view2').addClass('show active');
-                <?php foreach ($milestones as $key => $value2) : ?>
+                <?php foreach ($milestones as $key2 => $value2) : ?>
                     $('#m-tab_<?= $value2->id_project ?>_<?= $value2->id_project_m ?>').removeClass('active');
                     $('#home_<?= $value2->id_project ?>_<?= $value2->id_project_m ?>').removeClass('show active');
                 <?php endforeach; ?>
                 $('#m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>').addClass('active');
                 $('#home_<?= $value->id_project ?>_<?= $value->id_project_m ?>').addClass('show active');
 
+                // Ajax Menampilkan Task berdasarkan Milestone
                 reloadTableTaskList()
 
                 function reloadTableTaskList() {
@@ -793,6 +828,30 @@ use PhpParser\Node\Stmt\Echo_;
                 }
             });
         <?php endforeach; ?>
+
+        // Direct to detail milestones ketika udpate milestone
+        <?php if ((session()->getFlashdata('success_m3')) || (session()->getFlashdata('errors_m3'))) : ?>
+            <?php $success_m3 = session()->getFlashdata('success_m3'); ?>
+            <?php $errors_m3 = session()->getFlashdata('errors_m3'); ?>
+            $(document).ready(function() {
+                $('#project-view').removeClass('active');
+                $('#project-view2').removeClass('show active');
+                $('#milestone-view').addClass('active');
+                $('#milestone-view2').addClass('show active');
+                <?php foreach ($milestones as $key3 => $value3) : ?>
+                    $('#m-tab_<?= $value3->id_project ?>_<?= $value3->id_project_m ?>').removeClass('active');
+                    $('#home_<?= $value3->id_project ?>_<?= $value3->id_project_m ?>').removeClass('show active');
+                <?php endforeach; ?>
+                <?php if (session()->getFlashdata('success_m3')) : ?>
+                    $('#m-tab_<?= $success_m3['id_project'] ?>_<?= $success_m3['id_project_m'] ?>').addClass('active');
+                    $('#home_<?= $success_m3['id_project'] ?>_<?= $success_m3['id_project_m'] ?>').addClass('show active');
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('errors_m3')) : ?>
+                    $('#m-tab_<?= $errors_m3['id_project'] ?>_<?= $errors_m3['id_project_m'] ?>').addClass('active');
+                    $('#home_<?= $errors_m3['id_project'] ?>_<?= $errors_m3['id_project_m'] ?>').addClass('show active');
+                <?php endif; ?>
+            });
+        <?php endif; ?>
 
         $('#modal_milestone2').click(function() {
             $('#cekform_mt').val('1');
