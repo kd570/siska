@@ -223,3 +223,5 @@ function returnLogout(id) {
     var link = $('#logout').attr('href')
     $(location).attr('href', link)
 }
+
+

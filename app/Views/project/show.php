@@ -13,8 +13,9 @@ use PhpParser\Node\Stmt\Echo_;
     <div class="section-header">
         <h1>Pengurusan Legal Aset <b style="color: red;">(COOMING SOON)</b></h1>
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-            <div class="breadcrumb-item">Data Pengurusan Legal Aset</div>
+            <!-- <div class="breadcrumb-item active"><a href="#">Dashboard</a></div> -->
+            <div class="breadcrumb-item"><a href="<?= site_url('project'); ?>">Data Pengurusan Legal Aset</a></div>
+            <div class="breadcrumb-item active">Detail <?= $project->nama_project; ?></div>
         </div>
     </div>
     <div class="section-body">
@@ -66,6 +67,9 @@ use PhpParser\Node\Stmt\Echo_;
                                 <a class="nav-link" id="task-view" data-toggle="tab" href="#task-view2" role="tab" aria-controls="task-view" aria-selected="false">Task</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" id="file-view" data-toggle="tab" href="#file-view2" role="tab" aria-controls="file-view" aria-selected="false">File</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" id="history-view" data-toggle="tab" href="#history-view2" role="tab" aria-controls="history-view" aria-selected="false">Log</a>
                             </li>
                         </ul>
@@ -73,7 +77,8 @@ use PhpParser\Node\Stmt\Echo_;
 
                         <!-- CONTENT -->
                         <div class="tab-content tab-bordered" id="myTab3Content">
-                            <!-- PROJECT DETAILS -->
+
+                            <!-- PROJECT DETAIL -->
                             <div class="tab-pane fade show active" id="project-view2" role="tabpanel" aria-labelledby="project-view">
                                 <?php $errors = session()->getFlashdata('errors'); ?>
                                 <form action="<?= site_url('project/' . encrypt_decrypt('encrypt', $project->id_project)) ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
@@ -120,9 +125,18 @@ use PhpParser\Node\Stmt\Echo_;
                                             <tr>
                                                 <td>Status</td>
                                                 <td>
-                                                    <select name="status_project" id="status_project" class=" <?= $project->status_project == 0 ? 'form-control-sm bg-warning' : 'form-control-sm bg-success' ?> ">
-                                                        <option value="0" class="bg-warning" <?= $project->status_project == 0 ? 'selected' : null; ?>>Open</option>
-                                                        <option value="1" class="bg-success" <?= $project->status_project == 1 ? 'selected' : null; ?>>Close</option>
+                                                    <select name="status_project" id="status_project" class=" 
+                                                    <?php
+                                                    if ($project->status_project == 0) {
+                                                        echo 'form-control-sm bg-secondary';
+                                                    } elseif ($project->status_project == 1) {
+                                                        echo 'form-control-sm bg-success';
+                                                    } else {
+                                                        echo 'form-control-sm bg-danger';
+                                                    } ?>">
+                                                        <option value="0" class="bg-secondary" <?= $project->status_project == 0 ? 'selected' : null; ?>>Open</option>
+                                                        <option value="1" class="bg-success" <?= $project->status_project == 1 ? 'selected' : null; ?>>Finish</option>
+                                                        <option value="2" class="bg-danger" <?= $project->status_project == 2 ? 'selected' : null; ?>>Close</option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -130,15 +144,15 @@ use PhpParser\Node\Stmt\Echo_;
                                         </tbody>
                                     </table>
                                     <div class="d-flex justify-content-start mb-3">
-                                        <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> update data project</button>
+                                        <button type="submit" class="btn btn-light"><i class="fas fa-save"></i> update data project</button>
                                     </div>
                                 </form>
-                                <?php if (session()->getFlashdata('success1')) : ?>
+                                <?php if (session()->getFlashdata('success_m1')) : ?>
                                     <div class="alert alert-success alert-dismissible show fade">
                                         <div class="alert-body">
                                             <button class="close" data-dismiss="alert">x</button>
                                             <b>Success !</b>
-                                            <?= session()->getFlashdata('success1') ?>
+                                            <?= session()->getFlashdata('success_m1') ?>
                                         </div>
                                     </div>
                                 <?php endif; ?>
@@ -168,7 +182,7 @@ use PhpParser\Node\Stmt\Echo_;
                                             <?php foreach ($milestones as $key => $value) : ?>
                                                 <tr>
                                                     <td class="text-center"><?= $value->end_project_m ?></td>
-                                                    <td><a href="<?= site_url('project/' . encrypt_decrypt('encrypt', $value->id_project_m) . '/show'); ?>"><b><?= $value->nama_project_m ?></b></a></td>
+                                                    <td><a href="#" id="pb_<?= $value->id_project ?>_<?= $value->id_project_m ?>"><b><?= $value->nama_project_m ?></b></a></td>
                                                     <td>
                                                         <div class="progress" title="75%">
                                                             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
@@ -190,9 +204,9 @@ use PhpParser\Node\Stmt\Echo_;
                                     </table>
                                 </div>
                             </div>
-                            <!-- END PROJECT DETAILS -->
+                            <!-- END PROJECT DETAIL -->
 
-                            <!-- MILESTONES -->
+                            <!-- MILESTONES DETAIL-->
                             <div class="tab-pane fade" id="milestone-view2" role="tabpanel" aria-labelledby="milestone-view">
                                 <div class="row">
                                     <!-- Tab Samping Kiri -->
@@ -200,22 +214,22 @@ use PhpParser\Node\Stmt\Echo_;
                                         <ul class="nav nav-pills flex-column" id="mTab" role="tablist">
                                             <?php foreach ($milestones as $key => $value) : ?>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" id="m-tab<?= $key + 1 ?>" data-toggle="tab" href="#home<?= $key + 1 ?>" role="tab" aria-controls="home" aria-selected="true"><?= $value->nama_project_m ?></a>
+                                                    <a class="nav-link" id="m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>" data-toggle="tab" href="#home_<?= $value->id_project ?>_<?= $value->id_project_m ?>" role="tab" aria-controls="home" aria-selected="true"><?= $value->nama_project_m ?></a>
                                                 </li>
                                             <?php endforeach; ?>
                                             <li class="nav-item">
-                                                <a class="btn btn-icon icon-left" data-toggle="modal" href="#modalForm1" style="color: #6777ef;"><i class="fa fa-plus"></i> Tambah Milestones</a>
+                                                <a class="btn btn-icon icon-left" data-toggle="modal" id="modal_milestone2" href="#modalForm1" style="color: #6777ef;"><i class="fa fa-plus"></i> Tambah Milestones</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- END Tab Samping Kiri -->
+                                    <!-- end Tab Samping Kiri -->
 
                                     <!-- Tab Samping Kanan -->
                                     <div class="col-12 col-sm-12 col-md-9">
                                         <div class="tab-content no-padding" id="mTabContent">
                                             <?php foreach ($milestones as $key => $value) : ?>
-                                                <div class="tab-pane fade" id="home<?= $key + 1 ?>" role="tabpanel" aria-labelledby="m-tab<?= $key + 1 ?>">
-                                                    <!-- MILESTONES DETAILS -->
+                                                <div class="tab-pane fade" id="home_<?= $value->id_project ?>_<?= $value->id_project_m ?>" role="tabpanel" aria-labelledby="m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>">
+                                                    <!-- milestone update -->
                                                     <?php $errors = session()->getFlashdata('errors'); ?>
                                                     <form action="<?= site_url('project/upd_p_milestone/' . encrypt_decrypt('encrypt', $value->id_project_m)) ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                                                         <?= csrf_field() ?>
@@ -251,14 +265,14 @@ use PhpParser\Node\Stmt\Echo_;
                                                             </tbody>
                                                         </table>
                                                         <div class="d-flex justify-content-start mb-3 ml-3">
-                                                            <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> update data milestone</button>
+                                                            <button type="submit" class="btn btn-light"><i class="fas fa-save"></i> update data milestone</button>
                                                         </div>
                                                     </form>
-                                                    <!-- END MILESTONES DETAILS -->
+                                                    <!-- end milestone update -->
 
                                                     <!-- TASK LIST -->
                                                     <div class="card-header">
-                                                        <div class="col-lg-8 ">
+                                                        <div class="col-lg-8" id="header_task_list">
                                                             <h4>List Task untuk Milestone <?= $value->nama_project_m; ?></h4>
                                                         </div>
                                                         <div class="col-lg-4 p-0">
@@ -270,171 +284,31 @@ use PhpParser\Node\Stmt\Echo_;
                                                         </div>
                                                     </div>
                                                     <!-- MILESTONES TASK -->
-                                                    <table class="table table-striped">
-                                                        <tr>
-                                                            <th class="text-center pt-2">
-                                                                <div class="custom-checkbox custom-checkbox-table custom-control">
-                                                                    <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad" class="custom-control-input" id="checkbox-all">
-                                                                    <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                                                                </div>
-                                                            </th>
-                                                            <th>Title</th>
-                                                            <th>Category</th>
-                                                            <th>Author</th>
-                                                            <th>Created At</th>
-                                                            <th>Status</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-checkbox custom-control">
-                                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
-                                                                    <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                                                                </div>
-                                                            </td>
-                                                            <td><b>Project Pengurusan Lahan A</b>
-                                                                <div class="table-links">
-                                                                    <a href="<?= site_url('project/show'); ?>">View</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#">Edit</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#" class="text-danger">Trash</a>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                Pengurusan Lahan
-                                                            </td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title="">
-                                                                    <div class="d-inline-block ml-1">Ade Kurniawan</div>
-                                                                </a>
-                                                            </td>
-                                                            <td>2018-01-20</td>
-                                                            <td>
-                                                                <div class="badge badge-success">Selesai</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-checkbox custom-control">
-                                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
-                                                                    <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                                                                </div>
-                                                            </td>
-                                                            <td><b>Project Pengurusan Lahan B</b>
-                                                                <div class="table-links">
-                                                                    <a href="<?= site_url('project/show'); ?>">View</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#">Edit</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#" class="text-danger">Trash</a>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                Pengurusan Lahan
-                                                            </td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title="">
-                                                                    <div class="d-inline-block ml-1">Ade Kurniawan</div>
-                                                                </a>
-                                                            </td>
-                                                            <td>2018-01-20</td>
-                                                            <td>
-                                                                <div class="badge badge-success">Selesai</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-checkbox custom-control">
-                                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
-                                                                    <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                                                                </div>
-                                                            </td>
-                                                            <td><b>Project Pengurusan Lahan C</b>
-                                                                <div class="table-links">
-                                                                    <a href="<?= site_url('project/show'); ?>">View</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#">Edit</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#" class="text-danger">Trash</a>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                Pengurusan Lahan
-                                                            </td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title="">
-                                                                    <div class="d-inline-block ml-1">Ade Kurniawan</div>
-                                                                </a>
-                                                            </td>
-                                                            <td>2018-01-20</td>
-                                                            <td>
-                                                                <div class="badge badge-success">Selesai</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-checkbox custom-control">
-                                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
-                                                                    <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                                                                </div>
-                                                            </td>
-                                                            <td><b>Project Pengurusan Lahan D</b>
-                                                                <div class="table-links">
-                                                                    <a href="<?= site_url('project/show'); ?>">View</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#">Edit</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#" class="text-danger">Trash</a>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                Pengurusan Lahan
-                                                            </td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title="">
-                                                                    <div class="d-inline-block ml-1">Ade Kurniawan</div>
-                                                                </a>
-                                                            </td>
-                                                            <td>2018-01-20</td>
-                                                            <td>
-                                                                <div class="badge badge-warning">Progress</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="custom-checkbox custom-control">
-                                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
-                                                                    <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                                                                </div>
-                                                            </td>
-                                                            <td><b>Project Pengurusan Lahan E</b>
-                                                                <div class="table-links">
-                                                                    <a href="<?= site_url('project/show'); ?>">View</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#">Edit</a>
-                                                                    <div class="bullet"></div>
-                                                                    <a href="#" class="text-danger">Trash</a>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                Pengurusan Lahan
-                                                            </td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title="">
-                                                                    <div class="d-inline-block ml-1">Ade Kurniawan</div>
-                                                                </a>
-                                                            </td>
-                                                            <td>2018-01-20</td>
-                                                            <td>
-                                                                <div class="badge badge-danger">Belum</div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
+                                                    <?php if (session()->getFlashdata('success2')) : ?>
+                                                        <div class="alert alert-success alert-dismissible show fade">
+                                                            <div class="alert-body">
+                                                                <button class="close" data-dismiss="alert">x</button>
+                                                                <b>Success !</b>
+                                                                <?= session()->getFlashdata('success2') ?>
+                                                            </div>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered table-md">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-center" style="width: 10%;">#</th>
+                                                                    <th style="width: 30%;">Title</th>
+                                                                    <th style="width: 15%;">Start date</th>
+                                                                    <th style="width: 15%;">Deadline</th>
+                                                                    <th style="width: 20%;">Progress</th>
+                                                                    <th class="text-center" style="width: 10%;">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="task_list_<?= $value->id_project_m; ?>">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             <?php endforeach; ?>
                                         </div>
@@ -443,7 +317,7 @@ use PhpParser\Node\Stmt\Echo_;
 
                                 </div>
                             </div>
-                            <!-- END MILESTONES -->
+                            <!-- END MILESTONES DETAIL -->
 
                             <!-- TASK -->
                             <div class="tab-pane fade" id="task-view2" role="tabpanel" aria-labelledby="task-view">
@@ -517,6 +391,17 @@ use PhpParser\Node\Stmt\Echo_;
                                 </div>
                             </div>
                             <!-- END TASK -->
+
+                            <!-- FILE -->
+                            <div class="tab-pane fade" id="file-view2" role="tabpanel" aria-labelledby="file-view">
+                                <div class="card-body">
+                                    <form action="#" class="dropzone dz-clickable" id="mydropzone">
+
+                                        <div class="dz-default dz-message"><span>Drop file project untuk upload</span></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- END FILE -->
 
                             <!-- LOG -->
                             <div class="tab-pane fade" id="history-view2" role="tabpanel" aria-labelledby="history-view">
@@ -675,6 +560,7 @@ use PhpParser\Node\Stmt\Echo_;
     </div>
 </section>
 <!-- modal here -->
+<!-- MODAL MILESTONES -->
 <div class="modal fade" id="modalForm1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -689,29 +575,36 @@ use PhpParser\Node\Stmt\Echo_;
 
             <!-- Modal Body -->
             <div class="modal-body">
-                <?php $errors1 = session()->getFlashdata('errors1'); ?>
+                <?php if (session()->getFlashdata('errors_m2') == null) {
+                    $errors_mt = session()->getFlashdata('errors_m1');
+                } else {
+                    $errors_mt = session()->getFlashdata('errors_m2');
+                } ?>
                 <form action="<?= site_url('project/create_project_m') ?>" method="POST" enctype="multipart/form-data">
                     <?= csrf_field() ?>
+                    <input type="hidden" id="cekform_mt" name="cekform_mt" value="">
                     <input type="hidden" name="id_project" value="<?= $project->id_project; ?>">
+                    <input type="hidden" name="start_project" value="<?= $project->start_project; ?>">
+                    <input type="hidden" name="end_project" value="<?= $project->end_project; ?>">
                     <div class="form-group">
                         <label>Title</label>
-                        <input type="text" name="nama_project_m" placeholder="input milestone title" value="<?= old('nama_project_m'); ?>" class="form-control <?= isset($errors1['nama_project_m']) ? 'is-invalid' : null; ?>" id="nama_project_m"></input>
-                        <div class="invalid-feedback"><?= isset($errors1['nama_project_m']) ? $errors1['nama_project_m'] : null; ?></div>
+                        <input type="text" name="nama_project_m" placeholder="input milestone title" value="<?= old('nama_project_m'); ?>" class="form-control <?= isset($errors_mt['nama_project_m']) ? 'is-invalid' : null; ?>" id="nama_project_m"></input>
+                        <div class="invalid-feedback"><?= isset($errors_mt['nama_project_m']) ? $errors_mt['nama_project_m'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Deskripsi Milestone</label>
-                        <textarea name="des_project_m" placeholder="Input deskripsi milestones" class="form-control <?= isset($errors1['des_project_m']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= old('des_project_m'); ?></textarea>
-                        <div class="invalid-feedback"><?= isset($errors1['des_project_m']) ? $errors1['des_project_m'] : null; ?></div>
+                        <textarea name="des_project_m" placeholder="Input deskripsi milestones" class="form-control <?= isset($errors_mt['des_project_m']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= old('des_project_m'); ?></textarea>
+                        <div class="invalid-feedback"><?= isset($errors_mt['des_project_m']) ? $errors_mt['des_project_m'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Mulai Milestone</label>
-                        <input type="date" name="start_project_m" value="<?= old('start_project_m'); ?>" class="form-control <?= isset($errors1['start_project_m']) ? 'is-invalid' : null; ?>" id="start_project_m">
-                        <div class="invalid-feedback"><?= isset($errors1['start_project_m']) ? $errors1['start_project_m'] : null; ?></div>
+                        <input type="date" name="start_project_m" value="<?= old('start_project_m'); ?>" class="form-control <?= isset($errors_mt['start_project_m']) ? 'is-invalid' : null; ?>" id="start_project_m">
+                        <div class="invalid-feedback"><?= isset($errors_mt['start_project_m']) ? $errors_mt['start_project_m'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Deadline</label>
-                        <input type="date" name="end_project_m" value="<?= old('end_project_m'); ?>" class="form-control <?= isset($errors1['end_project_m']) ? 'is-invalid' : null; ?>" id="end_project_m">
-                        <div class="invalid-feedback"><?= isset($errors1['end_project_m']) ? $errors1['end_project_m'] : null; ?></div>
+                        <input type="date" name="end_project_m" value="<?= old('end_project_m'); ?>" class="form-control <?= isset($errors_mt['end_project_m']) ? 'is-invalid' : null; ?>" id="end_project_m">
+                        <div class="invalid-feedback"><?= isset($errors_mt['end_project_m']) ? $errors_mt['end_project_m'] : null; ?></div>
                     </div>
             </div>
             <!-- Modal Footer -->
@@ -724,7 +617,7 @@ use PhpParser\Node\Stmt\Echo_;
     </div>
 </div>
 
-
+<!-- MODAL TASK -->
 <div class="modal fade" id="modalForm2" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -740,22 +633,23 @@ use PhpParser\Node\Stmt\Echo_;
             <!-- Modal Body -->
             <div class="modal-body">
                 <!-- <p class="statusMsg"></p> -->
-                <?php $errors = session()->getFlashdata('errors'); ?>
+                <?php $errors2 = session()->getFlashdata('errors2'); ?>
                 <form action="<?= site_url('project/create_project_t') ?>" method="POST" enctype="multipart/form-data">
                     <?= csrf_field() ?>
+                    <input type="hidden" id="id_project" name="id_project" value="<?= $project->id_project; ?>">
                     <div class="form-group">
                         <label>Title</label>
-                        <input type="text" name="nama_project_t" placeholder="input task title" value="<?= old('nama_project_t'); ?>" class="form-control <?= isset($errors['nama_project_t']) ? 'is-invalid' : null; ?>" id="nama_project_t"></input>
-                        <div class="invalid-feedback"><?= isset($errors['nama_project_t']) ? $errors['nama_project_t'] : null; ?></div>
+                        <input type="text" name="nama_project_t" placeholder="input task title" value="<?= old('nama_project_t'); ?>" class="form-control <?= isset($errors2['nama_project_t']) ? 'is-invalid' : null; ?>" id="nama_project_t"></input>
+                        <div class="invalid-feedback"><?= isset($errors2['nama_project_t']) ? $errors2['nama_project_t'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Deskripsi Task</label>
-                        <textarea name="des_project_t" placeholder="Input deskripsi task" class="form-control <?= isset($errors['des_project_t']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= old('des_project_t'); ?></textarea>
-                        <div class="invalid-feedback"><?= isset($errors['des_project_t']) ? $errors['des_project_t'] : null; ?></div>
+                        <textarea name="des_project_t" placeholder="Input deskripsi task" class="form-control <?= isset($errors2['des_project_t']) ? 'is-invalid' : null; ?>" style="height: 100px;"><?= old('des_project_t'); ?></textarea>
+                        <div class="invalid-feedback"><?= isset($errors2['des_project_t']) ? $errors2['des_project_t'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Point</label>
-                        <select name="jenis_project" id="jenis_project" class="form-control <?= isset($errors['jenis_project']) ? 'is-invalid' : null; ?>">
+                        <select name="point_t" id="point_t" class="form-control <?= isset($errors2['point_t']) ? 'is-invalid' : null; ?>">
                             <option value="" hidden>pilih poin task</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -765,23 +659,26 @@ use PhpParser\Node\Stmt\Echo_;
                     </div>
                     <div class="form-group">
                         <label>Milestones</label>
-                        <select name="id_project_m" id="id_project_m" class="form-control <?= isset($errors['id_project_m']) ? 'is-invalid' : null; ?>">
+                        <select name="id_project_m" id="id_project_m" class="form-control <?= isset($errors2['id_project_m']) ? 'is-invalid' : null; ?>">
                             <option value="" hidden>pilih milestones</option>
+                            <?php foreach ($milestones as $key => $value) : ?>
+                                <option value="<?= $value->id_project_m; ?>" <?= $value->id_project_m == $project->id_project_m ? 'selected' : null; ?>><?= $value->nama_project_m; ?></option>
+                            <?php endforeach; ?>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Mulai Task</label>
-                        <input type="date" name="start_project_t" value="<?= old('start_project_t'); ?>" class="form-control <?= isset($errors['start_project_t']) ? 'is-invalid' : null; ?>" id="start_project_t">
-                        <div class="invalid-feedback"><?= isset($errors['start_project_t']) ? $errors['start_project_t'] : null; ?></div>
+                        <input type="date" name="start_project_t" value="<?= old('start_project_t'); ?>" class="form-control <?= isset($errors2['start_project_t']) ? 'is-invalid' : null; ?>" id="start_project_t">
+                        <div class="invalid-feedback"><?= isset($errors2['start_project_t']) ? $errors2['start_project_t'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Deadline</label>
-                        <input type="date" name="end_project_t" value="<?= old('end_project_t'); ?>" class="form-control <?= isset($errors['end_project_t']) ? 'is-invalid' : null; ?>" id="end_project_t">
-                        <div class="invalid-feedback"><?= isset($errors['end_project_t']) ? $errors['end_project_t'] : null; ?></div>
+                        <input type="date" name="end_project_t" value="<?= old('end_project_t'); ?>" class="form-control <?= isset($errors2['end_project_t']) ? 'is-invalid' : null; ?>" id="end_project_t">
+                        <div class="invalid-feedback"><?= isset($errors2['end_project_t']) ? $errors2['end_project_t'] : null; ?></div>
                     </div>
                     <div class="form-group">
                         <label>Status</label>
-                        <select name="status_project" id="status_project" class="form-control <?= isset($errors['status_project']) ? 'is-invalid' : null; ?>">
+                        <select name="progress_t" id="progress_t" class="form-control <?= isset($errors2['progress_t']) ? 'is-invalid' : null; ?>">
                             <option value="" hidden>pilih status task</option>
                             <option value="0">To do</option>
                             <option value="25">On Progress 25%</option>
@@ -808,25 +705,101 @@ use PhpParser\Node\Stmt\Echo_;
         const select = $('#status_project').val();
         console.log(select)
         if (select == 0)
-            document.getElementById("status_project").className = "form-control-sm bg-warning";
+            document.getElementById("status_project").className = "form-control-sm bg-secondary";
         else if (select == 1)
             document.getElementById("status_project").className = "form-control-sm bg-success";
+        else document.getElementById("status_project").className = "form-control-sm bg-danger";
     });
 </script>
 <script>
-    <?php if (session()->getFlashdata('errors1')) : ?>
+    <?php if (session()->getFlashdata('errors_m1')) : ?>
         $(document).ready(function() {
+            $('#modalForm1').modal('show');
+        });
+    <?php endif; ?>
+    <?php if (session()->getFlashdata('errors_m2')) : ?>
+        $(document).ready(function() {
+            $('#project-view').removeClass('active');
+            $('#project-view2').removeClass('show active');
+            $('#milestone-view').addClass('active');
+            $('#milestone-view2').addClass('show active');
             $('#modalForm1').modal('show');
         });
     <?php endif; ?>
 </script>
 <script>
-    <?php if (session()->getFlashdata('errors2')) : ?>
-        $(document).ready(function() {
+    $(document).ready(function() {
+        // Kembali ke modal ketika error
+        <?php if (session()->getFlashdata('errors2')) : ?>
+            $('#project-view').removeClass('active');
+            $('#project-view2').removeClass('show active');
+            $('#milestone-view').addClass('active');
+            $('#milestone-view2').addClass('show active');
             $('#modalForm2').modal('show');
+        <?php endif; ?>
+        // link to detail milestones
+        <?php foreach ($milestones as $key => $value) : ?>
+            $('#pb_<?= $value->id_project ?>_<?= $value->id_project_m ?>,#m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>').click(function() {
+                var id_project = '<?= $value->id_project ?>';
+                var id_project_m = '<?= $value->id_project_m ?>';
+                $('#project-view').removeClass('active');
+                $('#project-view2').removeClass('show active');
+                $('#milestone-view').addClass('active');
+                $('#milestone-view2').addClass('show active');
+                <?php foreach ($milestones as $key => $value2) : ?>
+                    $('#m-tab_<?= $value2->id_project ?>_<?= $value2->id_project_m ?>').removeClass('active');
+                    $('#home_<?= $value2->id_project ?>_<?= $value2->id_project_m ?>').removeClass('show active');
+                <?php endforeach; ?>
+                $('#m-tab_<?= $value->id_project ?>_<?= $value->id_project_m ?>').addClass('active');
+                $('#home_<?= $value->id_project ?>_<?= $value->id_project_m ?>').addClass('show active');
+
+                reloadTableTaskList()
+
+                function reloadTableTaskList() {
+                    $.ajax({
+                        url: "/project/gettaskdetail/<?= $value->id_project ?>/<?= $value->id_project_m ?>",
+                        dataType: 'json',
+                        success: function(data) {
+                            var html = data;
+                            var i;
+                            for (i = 0; i < data.length; i++) {
+                                var id_project_m = data[i].id_project_m;
+                                var id_project_t = data[i].id_project_t;
+                                var site_url = '<?php site_url("project/del_p_task/" . encrypt_decrypt("encrypt", "<script>id_project_t</script>")); ?>';
+                                html += '<tr><td class="text-center">' + (i + 1) + '</td>';
+                                html += '<td><a href="#" id="mb_' + data[i].id_project + '_' + data[i].id_project_m + '_' + data[i].id_project_t + '"><b>' + data[i].nama_project_t + '</b></a></td>';
+                                html += '<td class="text-center">' + data[i].start_project_t + '</td>';
+                                html += '<td class="text-center">' + data[i].end_project_t + '</td>';
+                                if (data[i].progress_t == 0) {
+                                    html += '<td class="text-center"><span class="badge badge-danger p-1"><small>To do</small></span></td>';
+                                } else if (data[i].progress_t == 25) {
+                                    html += '<td class="text-center"><span class="badge badge-warning p-1"><small>On progress 25%</small></span></td>';
+                                } else if (data[i].progress_t == 50) {
+                                    html += '<td class="text-center"><span class="badge badge-warning p-1"><small>On progress 50%</small></span></td>';
+                                } else if (data[i].progress_t == 75) {
+                                    html += '<td class="text-center"><span class="badge badge-warning p-1"><small>On progress 75%</small></span></td>';
+                                } else {
+                                    html += '<td class="text-center"><span class="badge badge-success p-1"><small>Done</small></span></td>';
+                                }
+                                html += '<td class="text-center">';
+                                html += '<form action="' + site_url + '" title="Hapus Task" method="POST" class="d-inline" id="del-' + data[i].id_project_m + '">';
+                                html += '<?= csrf_field() ?>';
+                                html += '<button class="btn btn-danger btn-sm" data-confirm="Hapus data?| Apakah anda yakin menghapus data?" data-confirm-yes="submitDel(' + data[i].id_project_m + ')">';
+                                html += '<i class=" fas fa-trash-alt"></i></button></form></td>';
+                                $('#task_list_' + id_project_m + '').html(html);
+                            }
+                        }
+                    })
+                }
+            });
+        <?php endforeach; ?>
+
+        $('#modal_milestone2').click(function() {
+            $('#cekform_mt').val('1');
         });
-    <?php endif; ?>
+    });
 </script>
+
 
 
 <?= $this->endSection() ?>

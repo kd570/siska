@@ -32,7 +32,7 @@ class Filters extends BaseConfig
     public array $globals = [
         'before' => [
             // 'honeypot',
-            'csrf' => ['except' => ['areaaset/get_kota', 'areaaset/get_kecamatan', 'areaaset/get_kelurahan']],
+            'csrf' => ['except' => ['areaaset/get_kota', 'areaaset/get_kecamatan', 'areaaset/get_kelurahan', 'project/gettaskdetail/*/*']],
             // 'invalidchars',
         ],
         'after' => [

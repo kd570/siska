@@ -14,8 +14,8 @@ use PhpParser\Node\Stmt\Echo_;
         <h1>Pengurusan Legal Aset <b style="color: red;">(COOMING SOON)</b></h1>
 
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-            <div class="breadcrumb-item">Data Pengurusan Legal Aset</div>
+            <!-- <div class="breadcrumb-item active"><a href="#">Dashboard</a></div> -->
+            <div class="breadcrumb-item active">Data Pengurusan Legal Aset</div>
         </div>
     </div>
     <?php
@@ -44,16 +44,16 @@ use PhpParser\Node\Stmt\Echo_;
                     <div class="card-body">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Semua <span class="badge badge-white">5</span></a>
+                                <a class="nav-link active" href="#">Semua <span class="badge badge-white">3</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Belum <span class="badge badge-primary">1</span></a>
+                                <a class="nav-link" href="#">Open <span class="badge badge-primary">1</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Progres <span class="badge badge-primary">1</span></a>
+                                <a class="nav-link" href="#">Finish <span class="badge badge-primary">1</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Selesai <span class="badge badge-primary">0</span></a>
+                                <a class="nav-link" href="#">Close <span class="badge badge-primary">1</span></a>
                             </li>
                         </ul>
                         <div>
@@ -93,27 +93,28 @@ use PhpParser\Node\Stmt\Echo_;
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($project as $key => $value) : ?>
+                                    <?php
+                                    foreach ($project as $key => $value) : ?>
                                         <tr>
-                                            <td><?= $key + 1 ?></th>
+                                            <td><?= $value->id_project ?></th>
                                             <td class="text-left"><a href="<?= site_url('project/' . encrypt_decrypt('encrypt', $value->id_project) . '/show'); ?>"><b><?= $value->nama_project ?></b></a>
                                                 <br><?php
                                                     if ($value->jenis_project == 0) {
-                                                        echo "<span class='badge badge-secondary p-1'><small>Pengurusan Aset Lahan</small></span>";
+                                                        echo "<span class='badge badge-info p-1'><small>Pengurusan Aset Lahan</small></span>";
                                                     } else {
-                                                        echo "<span class='badge badge-info p-1'><small>Pengurusan Okupasi Lahan</small></span>";
+                                                        echo "<span class='badge badge-warning p-1'><small>Pengurusan Okupasi Lahan</small></span>";
                                                     }; ?>
                                             </td>
                                             <td><?= $value->nama_aset ?></b></td>
                                             <td><?= $value->start_project ?></b></td>
                                             <td><?= $value->end_project ?></b></td>
                                             <?php
-                                            if ($value->status_project = 0) {
-                                                echo "<td><span class='badge badge-danger'>Close</span></td>";
-                                            } elseif ($value->status_project = 1) {
-                                                echo "<td><span class='badge badge-warning'>On-Progress</span></td>";
+                                            if ($value->status_project == 0) {
+                                                echo "<td><span class='badge badge-secondary'>Open</span></td>";
+                                            } elseif ($value->status_project == 1) {
+                                                echo "<td><span class='badge badge-success'>Finish</span></td>";
                                             } else {
-                                                echo "<td><span class='badge badge-success'>Done</span></td>";
+                                                echo "<td><span class='badge badge-danger'>Close</span></td>";
                                             }; ?>
                                             <!-- <td><?= $value->progres_project ?></b></td> -->
                                             <!-- <td>
@@ -235,8 +236,8 @@ use PhpParser\Node\Stmt\Echo_;
                         <select name="status_project" id="status_project" class="form-control <?= isset($errors['status_project']) ? 'is-invalid' : null; ?>">
                             <option value="" hidden>pilih status project</option>
                             <option value="0">Open</option>
-                            <option value="1">Close</option>
-                            <option value="2">Done</option>
+                            <option value="1">Finish</option>
+                            <option value="2">Close</option>
                         </select>
                         <div class="invalid-feedback"><?= isset($errors['status_project']) ? $errors['status_project'] : null; ?></div>
                     </div>

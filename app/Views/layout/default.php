@@ -66,12 +66,13 @@
             </nav>
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
-                    <div class="sidebar-brand p-3">
+                    <div class="sidebar-brand p-2 mb-4">
                         <a href="<?= site_url(); ?>">
-                            <h5 class="text-md-center">SISKA14</h5>
+                            <!-- <h5 class="text-md-center">SISKA14</h5> -->
+                            <img src="<?= base_url() ?>/siska.png" alt="logo" width="180">
                         </a>
                     </div>
-                    <div class="sidebar-brand sidebar-brand-sm">
+                    <div class=" sidebar-brand sidebar-brand-sm">
                         <a href="<?= site_url(); ?>">S</a>
                     </div>
                     <ul class="sidebar-menu">
@@ -96,7 +97,7 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2023 <div class="bullet"></div> By <a href="#">Sub-Bagian TI PTPN XIV</a>
+                    Copyright &copy; 2023 <div class="fas fa-heart"></div> By Sub-Bagian TI PTPN XIV
                 </div>
                 <div class="footer-right">
                     1.0.0
